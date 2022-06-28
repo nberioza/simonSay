@@ -10,12 +10,12 @@
 
 import * as React from 'react';
 import {Provider} from 'react-redux';
-import {store} from './store/store';
+import {store} from './src/store/store';
 import {NavigationContainer} from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import GameScreen from './screens/gameScreen';
-import ScoreScreen from './screens/ScoreScreen';
-import ModalScreen from './screens/ModalScreen';
+import GameScreen from './src/screens/gameScreen';
+import ScoreScreen from './src/screens/ScoreScreen';
+import ModalScreen from './src/screens/ModalScreen';
 import { PersistGate } from 'redux-persist/integration/react';
 import { persistStore } from 'redux-persist';
 import { ScreenStackHeaderConfig } from 'react-native-screens';
@@ -52,13 +52,3 @@ const App: React.FC = () => {
 
 export default App;
 
-
-/**
- * <NavigationContainer>
-  <Stack.Navigator  initialRouteName='CategoriesScreen'>
-    <Stack.Screen  name="CategoriesScreen" component={CategoriesScreen}/>
-    <Stack.Screen name="MealsOverview" component={MealsOverview}/>
-  </Stack.Navigator>
-</NavigationContainer> 
-  <Stack.Screen name="ScoreScreen" component={ScoreScreen} />
- */

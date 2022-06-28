@@ -12,6 +12,7 @@ const persistConfig = {
   key: 'root',
   storage: AsyncStorage,
   blacklist: ['game'],
+
   whitelist:['score']
 }
 const reducers = combineReducers({
